@@ -1,11 +1,11 @@
 <script>
-// // 导入我们封装的api
+// 导入我们封装的api
 import {login} from "@/api/user"
 
-// 导入md5
+// 导入md5,加密密码
 import md5 from "md5"
 
-// 存入token
+// 登录请求后存入token
 import {setToken} from "@/utils/token";
 
 export default {
@@ -35,7 +35,6 @@ export default {
   methods: {
     // 提交方法
     submitForm(formName) {
-
       // UI自带的校验
       this.$refs[formName].validate(async valid => {
         // 校验通过
@@ -45,7 +44,7 @@ export default {
           // 异步请求发送
           const res = await login(this.ruleForm)
           // 解构结果
-          const {code, data} = res
+          const {code, data} = res.data
 
           if (code === 20000) {
             // 封装返回的token,调用setToken方法
@@ -53,17 +52,14 @@ export default {
             // 路由跳转
             await this.$router.push({path: "/home"})
           }
-
-          console.log("login setToken is ", data.data.token)
-          console.log("login res is ", res)
+          // console.log("login setToken is ", token)
+          // console.log("login res is ", res)
         } else {
           console.log('error submit!!');
           return false;
-
         }
       });
     },
-
     // 重置按钮
     resetForm(formName) {
       this.$refs[formName].resetFields();

@@ -4,6 +4,7 @@ export function initRouter(routerData, targetArray) {
     // 拿到我们的路由数据,就开始遍历
     routerData.forEach(item => {
 
+        // 路由模板
         const routerObj = {
             path: item.url,
             name: item.name,

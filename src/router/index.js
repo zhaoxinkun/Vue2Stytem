@@ -37,7 +37,7 @@ const routes = [
 // 做递归路由,先拿到我们的home
 const homeRoutes = routes.filter(v => v.path === '/home')[0]
 
-console.log(homeRoutes)
+console.log("路由的ppath为home的节点"+homeRoutes)
 // 2.然后手动往里添加子集
 homeRoutes.children = []
 

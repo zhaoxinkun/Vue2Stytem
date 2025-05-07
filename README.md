@@ -32,7 +32,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 + 环境搭建 vue-cli
 + 路由搭建 vue-router@3
 
-  + 注册路由
+  + 配置路由
   + 递归路由
 + Element UI 搭建 element-ui
 + sass 搭建 
@@ -40,13 +40,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   + sass 
   + sass-loader
 + 项目结构搭建
-+ login 页面
-+ home 页面
-
-  + container 布局容器
-  + sidebar 中Menu无限级
-  + Main 展示组件
+  + login 页面
+  + home 页面
+  + container 加载布局容器
+    + sidebar 中Menu无限级处理(Menu拿到数据,使用props给menu-item)
+    + Main 展示组件,路由出口
 + api 分级
-  + restful http 请求封装
+  + config-restful 做http 请求封装
   + axios 封装
     + user  api md5加密,实现登录(this有问题)
++ token封装
+
+
+
+## 2525-05-07
+
++ 头部的组件的完善(国际化,退出,面包屑)
