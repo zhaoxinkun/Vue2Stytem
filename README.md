@@ -40,8 +40,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   + sass 
   + sass-loader
 + 项目结构搭建
-  + login 页面
-  + home 页面
+  + login page
+  + home page
   + container 加载布局容器
     + sidebar 中Menu无限级处理(Menu拿到数据,使用props给menu-item)
     + Main 展示组件,路由出口
@@ -55,4 +55,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 2525-05-07
 
-+ 头部的组件的完善(国际化,退出,面包屑)
++ 头部的组件的完善(国际化,用户退出,面包屑)
+
++ echarts
+
+  
+
