@@ -42,7 +42,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 + 项目结构搭建
   + login page
   + home page
-  + container 加载布局容器
+    + container 加载布局容器
+    + header 页面的头部部分
     + sidebar 中Menu无限级处理(Menu拿到数据,使用props给menu-item)
     + Main 展示组件,路由出口
 + api 分级
@@ -55,7 +56,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 2525-05-07
 
-+ 头部的组件的完善(国际化,用户退出,面包屑)
++ 头部的组件的完善
+
+  + 国际化
+  + 用户退出
+  + 面包屑
 
 + echarts
 
