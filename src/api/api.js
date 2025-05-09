@@ -14,8 +14,7 @@ import http from "./restfulType"
 
 // 企业首页 页面api-------------------------------
 
-// 查询用户分布
-export const employMap = token => http.get(`/user/employ-map`, token)
+
 
 // COM api
 

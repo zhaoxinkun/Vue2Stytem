@@ -2,7 +2,7 @@
 import * as echarts from "echarts"
 
 export default {
-  name: "index",
+  name: "ChartLine",
   data() {
     return {
       myCharts: null
@@ -11,8 +11,9 @@ export default {
   mounted() {
 
     this.initCharts();
+    // 图表响应式事件
     window.addEventListener('resize', () => {
-      this.myChart.resize()
+      this.myCharts.resize()
     })
 
   },

@@ -9,6 +9,11 @@ import router from "@/router";
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
+
+// 全局组件
+import GlobalCom from "@/pages/home/globalCom/GlobalCom.vue";
+Vue.component('GlobalCom', GlobalCom);
+
 Vue.use(ElementUI);
 
 

@@ -1,4 +1,4 @@
-// Line.js
+// ChartLines.js
 export default {
     xAxis: {
         type: 'category',
