@@ -54,7 +54,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
-## 2525-05-07
+## 2025-05-07
 
 + 头部的组件的完善
 
@@ -64,5 +64,15 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 + echarts
 
-  
+  ## 2025-05-09
+
++ echarts
+
+  + line
+  + sandian
+  + Map
+
++ 全局组件
+
++ 申请类别
 
